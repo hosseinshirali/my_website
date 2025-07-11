@@ -1,0 +1,49 @@
+/* Contact section redesign to match the screenshot */
+.contact-icons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.contact-icon:hover {
+  border-color: var(--ai-primary);
+  color: var(--ai-primary);
+  transform: translateY(-5px);
+}
+
+/* CV Download Button styling */
+#contact .button {
+  display: inline-block;
+  padding: 1em 2.5em;
+  background: linear-gradient(135deg, #3a86ff, #8338ec) !important;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+#contact .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(58, 134, 255, 0.4);
+}

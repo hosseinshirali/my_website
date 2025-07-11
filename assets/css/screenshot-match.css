@@ -1,0 +1,71 @@
+/* Styles to match the dark theme from the screenshot */
+
+/* Darker background to match screenshot */
+body {
+  background-color: #0a0e1a !important;
+}
+
+/* Adjust the particles container */
+#particles-js {
+  background-color: #0a0e1a !important;
+}
+
+/* Remove any extra styling from the wrapper */
+#wrapper {
+  background: transparent;
+}
+
+/* Match the button style from the screenshot */
+#contact .button {
+  background: linear-gradient(135deg, #3a86ff 0%, #8338ec 100%) !important;
+  border-radius: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding: 1em 2.5em !important;
+}
+
+/* Close button for modal style from screenshot */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Modal style adjustments */
+article {
+  background-color: rgba(10, 14, 26, 0.9) !important;
+  border-radius: 10px !important;
+}
+
+/* Footer style to match screenshot */
+#footer .copyright {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Match the nav style from the screenshot */
+#header nav ul li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 0.8em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Main heading style to match screenshot */
+h1 {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+/* Tagline style from screenshot */
+.tagline, .highlight {
+  color: #3a86ff !important;
+}
