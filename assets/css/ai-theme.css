@@ -47,8 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Enhanced Header */
 #header .logo .icon {
-  border: 2px solid var(--ai-primary);
-  box-shadow: 0 0 20px rgba(58, 134, 255, 0.6);
+  border: none;
+  box-shadow: none;
 }
 
 #header .content .inner h1 {
