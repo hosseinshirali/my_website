@@ -1,13 +1,13 @@
 /* Styles to match the dark theme from the screenshot */
 
-/* Darker background to match screenshot */
+/* Dark, AI-inspired gradient background */
 body {
-  background-color: #0a0e1a !important;
+  background: radial-gradient(circle at 20% 20%, #1a2350, #080b18 60%, #03040c 100%) fixed !important;
 }
 
-/* Adjust the particles container */
+/* Let the particle layer stay transparent so the gradient shows through */
 #particles-js {
-  background-color: #0a0e1a !important;
+  background: transparent !important;
 }
 
 /* Remove any extra styling from the wrapper */

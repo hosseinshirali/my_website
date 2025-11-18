@@ -45,6 +45,28 @@
     opacity: 0.9;
 }
 
+/* Consistent article container */
+.article-shell {
+    background: rgba(6, 10, 20, 0.92);
+    border: 1px solid rgba(58, 134, 255, 0.2);
+    border-radius: 18px;
+    padding: 2.75rem 2.5rem;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(18px);
+}
+
+@media screen and (max-width: 980px) {
+    .article-shell {
+        padding: 2.25rem 1.75rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .article-shell {
+        padding: 1.75rem 1.25rem;
+    }
+}
+
 /* Futuristic neural icon in the header */
 .neural-icon {
     display: flex;
@@ -111,6 +133,7 @@
     background: rgba(10, 17, 40, 0.85);
     box-shadow: 0 0 18px rgba(58, 134, 255, 0.35);
     color: #3a86ff;
+    animation: icon-shift 2.2s ease-in-out infinite;
 }
 
 .section-icon svg {
@@ -175,8 +198,8 @@
     }
 }
 
-/* Animated briefcase icon in Experience section */
-@keyframes slideLeftRight {
+/* Animated icons */
+@keyframes icon-shift {
     0%, 100% {
         transform: translateX(0);
     }
@@ -185,15 +208,11 @@
     }
 }
 
-#experience .experience-icon-container {
-    animation: slideLeftRight 2.2s ease-in-out infinite;
-}
-
-#experience .experience-icon-container svg {
+.section-icon svg {
     transition: transform 0.3s ease;
 }
 
-#experience .experience-icon-container:hover svg {
+.section-icon:hover svg {
     transform: scale(1.08);
 }
 
@@ -205,4 +224,72 @@
 
 .contact-icon {
     backdrop-filter: blur(6px);
+}
+
+/* Align the Projects/Research divider with the button boundary */
+#header nav.use-middle:after {
+    display: none;
+}
+
+#header nav.use-middle ul li {
+    position: relative;
+}
+
+#header nav.use-middle ul li.is-middle {
+    border-left: none !important;
+}
+
+#header nav.use-middle ul li.is-middle::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 2px;
+    height: calc(100% + 2px);
+    background: rgba(58, 134, 255, 0.45);
+    box-shadow: 0 0 6px rgba(58, 134, 255, 0.35);
+}
+
+@media screen and (min-width: 737px) {
+    #header nav ul {
+        transform: translateX(-14px);
+    }
+
+    #header nav.use-middle ul li.is-middle::before {
+        left: calc(-1px + 14px);
+    }
+}
+
+/* AI-inspired layered background */
+body {
+    background-attachment: fixed;
+}
+
+#bg {
+    pointer-events: none;
+}
+
+#bg:before {
+    background: radial-gradient(circle at 50% 20%, rgba(58, 134, 255, 0.18), transparent 60%), radial-gradient(circle at 15% 70%, rgba(0, 217, 255, 0.15), transparent 45%), linear-gradient(125deg, rgba(3, 8, 20, 0.95), rgba(5, 7, 18, 0.95)) !important;
+    opacity: 1;
+}
+
+#bg:after {
+    background-image: radial-gradient(circle at center, rgba(58, 134, 255, 0.25) 0%, rgba(4, 10, 26, 0.05) 45%, transparent 70%), url('../images/ai-network.svg') !important;
+    background-size: 160% 160%, 110%;
+    background-position: center, center;
+    opacity: 0.55;
+    mix-blend-mode: screen;
+    animation: ai-grid-rotate 80s linear infinite;
+    transform-origin: center;
+    filter: drop-shadow(0 0 20px rgba(58, 134, 255, 0.35));
+}
+
+@keyframes ai-grid-rotate {
+    0% {
+        transform: scale(1.15) rotate(0deg);
+    }
+    100% {
+        transform: scale(1.15) rotate(360deg);
+    }
 }

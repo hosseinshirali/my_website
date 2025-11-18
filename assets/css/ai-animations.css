@@ -6,7 +6,7 @@
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  animation: typing 3.5s steps(40, end) forwards;
   margin-bottom: 0.5rem;
 }
 
