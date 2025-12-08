@@ -293,3 +293,32 @@ body {
         transform: scale(1.15) rotate(360deg);
     }
 }
+
+/* Conferences & Talks section styling */
+#conferences ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#conferences ul li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(58, 134, 255, 0.15);
+}
+
+#conferences ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+#conferences ul li a {
+    color: #00d9ff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#conferences ul li a:hover {
+    color: #3a86ff;
+    text-decoration: underline;
+}
