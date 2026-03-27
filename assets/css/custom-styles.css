@@ -95,7 +95,7 @@
 @keyframes neural-pulse {
     0% {
         transform-origin: center;
-        opacity: 1.9;
+        opacity: 0.9;
         filter: drop-shadow(0 0 8px rgba(58, 134, 255, 0.4));
     }
     50% {
@@ -147,6 +147,18 @@
     border-left: 3px solid rgba(58, 134, 255, 0.5);
     padding-left: 1.5rem;
     margin-bottom: 2.5rem;
+}
+
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #3a86ff;
+    box-shadow: 0 0 8px rgba(58, 134, 255, 0.7);
 }
 
 .timeline-card h3 {
@@ -201,10 +213,10 @@
 /* Animated icons */
 @keyframes icon-shift {
     0%, 100% {
-        transform: translateX(0);
+        transform: translateY(0);
     }
     50% {
-        transform: translateX(8px);
+        transform: translateY(-6px);
     }
 }
 
@@ -321,4 +333,17 @@ body {
 #conferences ul li a:hover {
     color: #3a86ff;
     text-decoration: underline;
+}
+
+/* Publication list item separators (matching conferences section style) */
+#publications ul li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(58, 134, 255, 0.15);
+}
+
+#publications ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
