@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://incandescent-scone-d4ee7d.netlify.app/sitemap.xml

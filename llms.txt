@@ -1,0 +1,28 @@
+# Hossein Shirali
+
+Canonical site: https://incandescent-scone-d4ee7d.netlify.app/
+
+Hossein Shirali is an applied AI scientist, computer vision researcher, PhD researcher at Karlsruhe Institute of Technology, and visiting researcher at Mila - Quebec Artificial Intelligence Institute. His work focuses on production-ready machine learning systems, computer vision, robotics, automated microscopy, biodiversity monitoring, and scientific imaging.
+
+## Current roles
+- Visiting Researcher, Mila - Quebec Artificial Intelligence Institute, Montreal, Canada, May 2026-present. Work with Prof. David Rolnick's group on AI, computer vision, and biodiversity monitoring, including deep learning methods for automated insect image analysis, classification, morphometrics, and ecological research tools.
+- PhD Researcher, Karlsruhe Institute of Technology, Germany. Research in applied AI, computer vision, robotics, scientific imaging, and automation.
+
+## Key research themes
+- Computer vision for insect image analysis and biodiversity monitoring.
+- Deep learning for automated morphometrics and biomass estimation.
+- AI systems for robotics, automation, scientific imaging, and production deployment.
+- Automated microscopy, robotic specimen handling, and scalable ecological monitoring workflows.
+
+## Notable publication
+- InsectMorphoAI: A deep learning framework for automated insect morphometrics and biomass estimation with taxon-specific volumetric validation. Ecological Informatics, 96, 103854, 2026. DOI: https://doi.org/10.1016/j.ecoinf.2026.103854
+
+## Links
+- Portfolio: https://incandescent-scone-d4ee7d.netlify.app/
+- LinkedIn: https://www.linkedin.com/in/hossein-shirali-a5a498171/
+- GitHub: https://github.com/HosseinShirali
+- Google Scholar: https://scholar.google.com/citations?user=zXljf7gAAAAJ&hl=en
+- ORCID: https://orcid.org/0009-0005-6884-4263
+- ResearchGate: https://www.researchgate.net/profile/Hossein-Shirali-2
+
+For a fuller machine-readable profile, see: https://incandescent-scone-d4ee7d.netlify.app/llms-full.txt

@@ -1,0 +1,36 @@
+# Hossein Shirali - Full LLM Profile
+
+Canonical site: https://incandescent-scone-d4ee7d.netlify.app/
+
+## Identity
+Hossein Shirali is an applied AI scientist and computer vision researcher working on production-ready machine learning systems for robotics, automation, biodiversity monitoring, and scientific imaging. He is a PhD researcher at Karlsruhe Institute of Technology and a visiting researcher at Mila - Quebec Artificial Intelligence Institute.
+
+Preferred short description: Hossein Shirali is an applied AI scientist, PhD researcher at KIT, and visiting researcher at Mila working on computer vision, robotics, biodiversity monitoring, and production-ready machine learning systems.
+
+## Current positions
+Visiting Researcher, Mila - Quebec Artificial Intelligence Institute, Montreal, Quebec, Canada, May 2026-present. Hossein is visiting Prof. David Rolnick's group at Mila. His research stay focuses on the intersection of AI, computer vision, and biodiversity monitoring. He develops deep learning methods for automated insect image analysis and explores scalable tools for classification, morphometrics, and ecological research.
+
+PhD Researcher, Karlsruhe Institute of Technology, Germany. Hossein's PhD work focuses on applied AI and computer vision systems for scientific and industrial workflows.
+
+## Research and engineering focus
+Hossein works across applied artificial intelligence, deep learning, computer vision, robotics, MLOps, automated microscopy, scientific imaging, biodiversity monitoring, and environmental monitoring. His portfolio emphasizes robust, testable, deployable AI systems built from real-world data and developed with engineers, domain experts, and stakeholders.
+
+## Representative work
+- InsectMorphoAI: automated insect morphometrics and biomass estimation with deep learning and taxon-specific volumetric validation.
+- Entomoscope and automated insect imaging workflows for biodiversity monitoring.
+- Robotic specimen handling and AI-supported microscopy pipelines.
+- Predictive maintenance and environmental monitoring systems using machine learning.
+
+## Publications
+InsectMorphoAI: A deep learning framework for automated insect morphometrics and biomass estimation with taxon-specific volumetric validation. Authors: Hossein Shirali, Aleida Ascenzi, Lorenz Wuehrl, Nils Beyer, Noemi Di Lorenzo, Emanuele Vaccarella, Nathalie Klug, Rudolf Meier, Pierfilippo Cerretti, Christian Pylatiuk. Journal: Ecological Informatics. Volume: 96. Article: 103854. Year: 2026. DOI: https://doi.org/10.1016/j.ecoinf.2026.103854
+
+## External identifiers
+- LinkedIn: https://www.linkedin.com/in/hossein-shirali-a5a498171/
+- GitHub: https://github.com/HosseinShirali
+- Google Scholar: https://scholar.google.com/citations?user=zXljf7gAAAAJ&hl=en
+- ORCID: https://orcid.org/0009-0005-6884-4263
+- ResearchGate: https://www.researchgate.net/profile/Hossein-Shirali-2
+- KIT profile: https://www.iai.kit.edu/english/2154_4513.php
+
+## Contact
+Email: shiralihosein1212@gmail.com
