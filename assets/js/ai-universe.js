@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  if (window.particlesJS) {
+  const enableParticles = false;
+  if (enableParticles && window.particlesJS) {
     window.particlesJS('particles-js', { // Corrected ID
       "particles": {
         "number": {

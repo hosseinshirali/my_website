@@ -1,7 +1,8 @@
 // AI-themed animations and enhancements
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize particles.js directly for better visibility
-    if (window.particlesJS) {
+    // Legacy particle canvas is disabled; the current design uses CSS depth instead.
+    const enableParticles = false;
+    if (enableParticles && window.particlesJS) {
         window.particlesJS('particles-js', {
             "particles": {
                 "number": {
@@ -93,8 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Add a console message to verify initialization
         console.log("Particles.js initialized for neural network effect");
-    } else {
-        console.error("Particles.js not loaded!");
     }
 
     // Add typewriter effect to the intro text
