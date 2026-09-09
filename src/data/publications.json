@@ -1,0 +1,204 @@
+[
+  {
+    "id": "acoustic-levitation",
+    "title": "Automated photogrammetric close-range imaging of small invertebrates using acoustic levitation",
+    "authors": "Klug, N., Kramer, M., Mazrek, F., Wührl, L., Shirali, H., Meier, R., & Pylatiuk, C.",
+    "year": 2026,
+    "venue": "Automatisierungstechnik",
+    "details": "74(7), 564–576.",
+    "status": "Published",
+    "summary": "Explores acoustic levitation for automated close-range imaging of small invertebrates.",
+    "doi": "10.1515/auto-2025-0139",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.1515/auto-2025-0139"
+      },
+      {
+        "label": "Project",
+        "href": "/projects/#robotic-specimen-handling"
+      }
+    ],
+    "earlierVersion": "https://doi.org/10.36227/techrxiv.172651022.21831566/v1",
+    "earlierYear": 2024
+  },
+  {
+    "id": "insectmorphoai",
+    "title": "InsectMorphoAI: A deep learning framework for automated insect morphometrics and biomass estimation with taxon-specific volumetric validation",
+    "authors": "Shirali, H., Ascenzi, A., Wührl, L., Beyer, N., Di Lorenzo, N., Vaccarella, E., Klug, N., Meier, R., Cerretti, P., & Pylatiuk, C.",
+    "year": 2026,
+    "venue": "Ecological Informatics",
+    "details": "96, 103854.",
+    "status": "Published",
+    "summary": "Estimates insect length, volume, and biomass from 2D images, with taxon-specific volumetric validation.",
+    "doi": "10.1016/j.ecoinf.2026.103854",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.1016/j.ecoinf.2026.103854"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/hosseinshirali/InsectMorphoAI"
+      },
+      {
+        "label": "Project",
+        "href": "/projects/#insectmorphoai"
+      }
+    ],
+    "earlierVersion": "https://doi.org/10.1101/2025.05.22.655251",
+    "image": {
+      "src": "/images/research/morpho.webp",
+      "alt": "InsectMorphoAI interface showing a fly, anatomical segmentation, and volume estimation.",
+      "caption": "InsectMorphoAI software interface.",
+      "source": "https://github.com/hosseinshirali/InsectMorphoAI",
+      "width": 990,
+      "height": 850
+    },
+    "earlierYear": 2025
+  },
+  {
+    "id": "agrilus",
+    "title": "Image-based recognition using advanced neural networks can aid surveillance of Agrilus jewel beetles",
+    "authors": "Caruso, V., Shirali, H., Bouget, C., Cerretti, P., Curletti, G., de Groot, M., Groznik, E., Gutowski, J. M., Pylatiuk, C., Plewa, R., Roques, A., Sallé, A., Sweeney, J., Van Rooyen, K., Wührl, L., & Rassati, D.",
+    "year": 2026,
+    "venue": "NeoBiota",
+    "details": "105, 319-336.",
+    "status": "Published",
+    "summary": "Tests neural networks for image-based identification of Agrilus beetles to support forest pest surveillance.",
+    "doi": "10.3897/neobiota.105.180959",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.3897/neobiota.105.180959"
+      },
+      {
+        "label": "Project",
+        "href": "/projects/#forsaid"
+      }
+    ],
+    "note": "Valerio Caruso and Hossein Shirali contributed equally.",
+    "image": {
+      "src": "/images/research/agrilus.webp",
+      "alt": "Twelve labelled Agrilus beetle specimens with different body shapes and colours; specimens are not to scale.",
+      "caption": "Fig. 1, Caruso et al. (2026), CC BY 4.0. Specimens not to scale.",
+      "source": "https://doi.org/10.3897/neobiota.105.180959",
+      "width": 846,
+      "height": 850
+    },
+    "shortAuthors": "Caruso, V., Shirali, H."
+  },
+  {
+    "id": "specimen-triage",
+    "title": "Automated specimen triage for dark taxa: Deep learning enables orientation, sex identification and anatomical segmentation from robotic imaging",
+    "authors": "Shirali, H., Wührl, L., Lee, L., Klug, N., Meier, R., Pylatiuk, C., & Hartop, E.",
+    "year": 2026,
+    "venue": "Systematic Entomology",
+    "details": "51, e70039.",
+    "status": "Published",
+    "summary": "Uses deep learning to identify specimen orientation and sex and segment anatomy in images of morphologically challenging flies.",
+    "doi": "10.1111/syen.70039",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.1111/syen.70039"
+      },
+      {
+        "label": "Project",
+        "href": "/projects/#robotic-specimen-handling"
+      }
+    ],
+    "image": {
+      "src": "/images/research/triage.webp",
+      "alt": "Four specimen images illustrating orientation classification and model attention on fly anatomy.",
+      "caption": "Shirali et al. (2026), CC BY.",
+      "source": "https://doi.org/10.1111/syen.70039",
+      "width": 1015,
+      "height": 850
+    }
+  },
+  {
+    "id": "flexible-gripper",
+    "title": "Automated handling of biological objects with a flexible gripper for biodiversity research",
+    "authors": "Wührl, L., Keller, L., Klug, N., Shirali, H., Meier, R., & Pylatiuk, C.",
+    "year": 2024,
+    "venue": "Automatisierungstechnik",
+    "details": "72(7), 672-678.",
+    "status": "Published",
+    "summary": "Introduces a flexible gripper for automated handling of biological specimens in biodiversity research.",
+    "doi": "10.1515/auto-2023-0238",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.1515/auto-2023-0238"
+      }
+    ]
+  },
+  {
+    "id": "parasitoid-wasps",
+    "title": "Image-based recognition of parasitoid wasps using advanced neural networks",
+    "authors": "Shirali, H., Hübner, J. J., Both, R., Raupach, M. J., Reischl, M., Schmidt, S., & Pylatiuk, C.",
+    "year": 2024,
+    "venue": "Invertebrate Systematics",
+    "details": "38(6), IS24011.",
+    "status": "Published",
+    "summary": "Investigates image-based neural networks for identifying parasitoid wasps.",
+    "doi": "10.1071/IS24011",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.1071/IS24011"
+      }
+    ]
+  },
+  {
+    "id": "entomoscope",
+    "title": "Entomoscope 2.0 and ENIMAS 2.0: An open-source, AI-integrated platform for rapid and affordable insect digitization",
+    "authors": "Shirali, H., Boese, N. E., Kramer, M., Wang, J., Klug, N., Mikut, R., Meier, R., & Pylatiuk, C.",
+    "year": 2026,
+    "venue": "bioRxiv",
+    "details": "",
+    "status": "Preprint",
+    "summary": "Combines an affordable photomicroscope with open-source software for automated insect imaging and AI analysis.",
+    "doi": "10.64898/2026.01.23.701290",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.64898/2026.01.23.701290"
+      },
+      {
+        "label": "Code",
+        "href": "https://gitlab.kit.edu/kit/iai/ber/enimas2"
+      },
+      {
+        "label": "Project",
+        "href": "/projects/#entomoscope"
+      }
+    ],
+    "image": {
+      "src": "/images/research/entomoscope.webp",
+      "alt": "Entomoscope photomicroscope with camera, motorized vertical stage, and illuminated specimen platform.",
+      "caption": "Entomoscope 2.0 device photograph, Shirali et al.",
+      "source": "https://doi.org/10.64898/2026.01.23.701290",
+      "width": 479,
+      "height": 850
+    }
+  },
+  {
+    "id": "microplastics",
+    "title": "Classification of microplastic particles in water using polarized light scattering and machine learning methods",
+    "authors": "Saur, L., von Pawlowski, M., Gengenbach, U., Sieber, I., Shirali, H., Wührl, L., Weng, X., Kiko, R., & Pylatiuk, C.",
+    "year": 2025,
+    "venue": "arXiv",
+    "details": "arXiv:2511.06901. Version 2, revised March 2026.",
+    "status": "Preprint",
+    "summary": "Investigates machine learning for classifying microplastic particles from polarized light scattering.",
+    "doi": "10.48550/arXiv.2511.06901",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.48550/arXiv.2511.06901"
+      }
+    ]
+  }
+]

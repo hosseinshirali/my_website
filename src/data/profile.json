@@ -1,0 +1,106 @@
+{
+  "name": "Hossein Shirali",
+  "role": "Applied AI & Computer Vision",
+  "email": "hossein.shirali@kit.edu",
+  "links": [
+    {
+      "label": "CV",
+      "href": "/assets/files/Hossein_Shirali_CV.pdf"
+    },
+    {
+      "label": "Google Scholar",
+      "href": "https://scholar.google.com/citations?user=zXljf7gAAAAJ&hl=en"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/hosseinshirali"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/in/hossein-shirali-a5a498171"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:hossein.shirali@kit.edu"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Karlsruhe Institute of Technology (KIT)",
+      "location": "Karlsruhe, Germany",
+      "degree": "Ph.D. Candidate",
+      "date": "Present",
+      "details": [
+        "Research: biodiversity research of invertebrates using deep learning methods."
+      ],
+      "supervisors": "apl. Prof. Dr. Christian Pylatiuk and apl. Prof. Dr. Markus Reischl"
+    },
+    {
+      "institution": "University of Bologna",
+      "location": "Bologna, Italy",
+      "degree": "Master of Electronic Technologies for Big Data and Internet of Things",
+      "date": "Oct. 2021",
+      "details": [
+        "Grade: 110/110.",
+        "Fields: statistics and architectures for big data processing and communications; signal acquisition and processing."
+      ]
+    },
+    {
+      "institution": "Shahid Chamran University of Ahvaz",
+      "location": "Iran",
+      "degree": "Bachelor of Electronic Engineering",
+      "date": "2017",
+      "details": [
+        "Fields: computer architecture, digital systems, and electronics."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "label": "Machine learning and vision",
+      "text": "Python, scikit-learn, TensorFlow, Keras, PyTorch, ONNX, OpenCV, YOLO"
+    },
+    {
+      "label": "Infrastructure and tools",
+      "text": "Docker, Kubernetes, Git, CI/CD, AWS, HPC/SLURM, Streamlit, Gradio, VS Code, Jupyter"
+    },
+    {
+      "label": "Expertise",
+      "text": "Deep learning, computer vision, model deployment, data and image analysis, neural network design, scientific computing, robotic imaging integration"
+    },
+    {
+      "label": "Languages",
+      "text": "Persian (native), English (B2), German (A2)"
+    }
+  ],
+  "presentations": [
+    {
+      "event": "Entomology Congress (DGaaE)",
+      "location": "Geisenheim, Germany",
+      "year": "2025",
+      "type": "Presentation",
+      "title": "AI-driven advances in Species Identification and Biomass Analysis"
+    },
+    {
+      "event": "27th International Congress of Entomology (ICE)",
+      "location": "Kyoto, Japan",
+      "year": "2024",
+      "type": "Presentation",
+      "title": "AI as a Catalyst in Entomological Research by Simplifying Species Identification"
+    },
+    {
+      "event": "Helmholtz Artificial Intelligence Conference",
+      "location": "Düsseldorf, Germany",
+      "year": "2024",
+      "type": "Poster",
+      "title": "Advancing Biodiversity Research with AI-Driven Automation"
+    },
+    {
+      "event": "Helmholtz Imaging Conference",
+      "location": "Hamburg, Germany",
+      "year": "2023",
+      "type": "Poster",
+      "title": "Automated Biodiversity Research"
+    }
+  ]
+}

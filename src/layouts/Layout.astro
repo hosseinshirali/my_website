@@ -1,0 +1,28 @@
+---
+import '@fontsource/space-grotesk/latin-400.css';
+import '@fontsource/space-grotesk/latin-500.css';
+import '@fontsource/space-grotesk/latin-600.css';
+import '../styles/global.css';
+import profile from '../data/profile.json';
+const { title = 'Hossein Shirali — Applied AI & Computer Vision', description = 'Doctoral researcher at KIT connecting computer vision, scientific imaging, and robotics. AI research into real systems, with biodiversity as a central application.' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const nav = [{label:'About',href:'/#about'},{label:'Publications',href:'/publications/'},{label:'Projects',href:'/projects/'},{label:'Background',href:'/background/'},{label:'CV',href:'/assets/files/Hossein_Shirali_CV.pdf'}];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title><meta name="description" content={description} /><link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/images/hossein-shirali.webp', Astro.site)} /><meta property="og:image:alt" content="Hossein Shirali" />
+    <meta name="twitter:card" content="summary" /><meta name="theme-color" content="#f7f9fc" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap"><a class="wordmark" href="/" aria-label="Hossein Shirali home">Hossein Shirali<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation"><ul>{nav.map(item => <li><a href={item.href} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>{item.label}</a></li>)}</ul></nav>
+    </header>
+    <main id="main" class="wrap" tabindex="-1"><slot /></main>
+    <footer class="site-footer wrap"><p>Hossein Shirali <span aria-hidden="true">·</span> Karlsruhe, Germany</p><a href={'mailto:' + profile.email}>Get in touch <span aria-hidden="true">↗</span></a></footer>
+  </body>
+</html>

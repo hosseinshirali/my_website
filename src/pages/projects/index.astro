@@ -1,0 +1,8 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import projects from '../../data/projects.json';
+---
+<Layout title="Systems & Projects — Hossein Shirali" description="Case studies in scientific imaging, insect morphometrics, forest pest surveillance, robotic handling, industrial optimization, and remote sensing.">
+  <header class="page-intro"><p class="eyebrow">From research to practice</p><h1>Systems &amp; Projects</h1><p>Connecting models, data, and physical systems to answer useful questions.</p><nav class="page-nav" aria-label="Project index">{projects.map(p => <a href={'#'+p.id}>{p.title}</a>)}</nav></header>
+  {projects.map((p,i) => <article id={p.id} class="case-study" data-project={p.id}><div class="case-heading"><span class="section-number" aria-hidden="true">0{i+1} /</span><p class="eyebrow">{p.tag}</p><h2>{p.title}</h2><p>{p.summary}</p></div><div class="case-content"><dl>{[['Problem',p.problem],['My contribution',p.contribution],['System / method',p.method],['Evidence',p.evidence]].map(([label,value]) => <div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><ul class="resource-links" aria-label={`Resources for ${p.title}`}>{p.resources.map(link => <li><a href={link.href}>{link.label} <span aria-hidden="true">↗</span></a></li>)}</ul></div></article>)}
+</Layout>

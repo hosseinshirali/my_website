@@ -1,0 +1,5 @@
+---
+const { authors } = Astro.props;
+const parts = authors.split(/(Shirali, H\.)/g);
+---
+<span>{parts.map((part: string) => part === 'Shirali, H.' ? <strong>{part}</strong> : part)}</span>

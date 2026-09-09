@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import profile from '../../data/profile.json';
+import experience from '../../data/experience.json';
+const talkLinks = ['1000180291','1000173979','1000171882','1000159668'];
+---
+<Layout title="Background — Hossein Shirali" description="Hossein Shirali’s research and industry experience, education, technical skills, and selected conference presentations.">
+  <header class="page-intro"><p class="eyebrow">Research &amp; industry</p><h1>Background</h1><p>Experience across computer vision, scientific systems, and applied data science.</p><nav class="page-nav" aria-label="Background sections"><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#conferences">Talks</a><a href="/assets/files/Hossein_Shirali_CV.pdf">Download CV (PDF) ↗</a></nav></header>
+  <section id="experience" class="home-section" aria-labelledby="experience-title"><h2 id="experience-title">Experience</h2>{experience.map(e => <article class="timeline-entry"><p class="timeline-date">{e.date}</p><div><h3>{e.role}</h3><p class="institution">{e.institution}</p><p class="location">{e.location}</p><ul>{e.bullets.map(b => <li>{b}</li>)}</ul></div></article>)}</section>
+  <section id="education" class="home-section" aria-labelledby="education-title"><h2 id="education-title">Education</h2>{profile.education.map(e => <article class="timeline-entry"><p class="timeline-date">{e.date}</p><div><h3>{e.degree}</h3><p class="institution">{e.institution}</p><p class="location">{e.location}</p>{e.supervisors && <p>Supervised by {e.supervisors}.</p>}<ul>{e.details.map(d => <li>{d}</li>)}</ul></div></article>)}</section>
+  <section id="skills" class="home-section" aria-labelledby="skills-title"><h2 id="skills-title">Skills</h2><dl class="skills-list">{profile.skills.map(s => <div><dt>{s.label}</dt><dd>{s.text}</dd></div>)}</dl></section>
+  <section id="conferences" class="home-section" aria-labelledby="talks-title"><h2 id="talks-title">Selected talks &amp; posters</h2>{profile.presentations.map((t,i) => <article class="timeline-entry"><p class="timeline-date">{t.year} · {t.type}</p><div><h3><a href={'https://publikationen.bibliothek.kit.edu/'+talkLinks[i]}>{t.title}</a></h3><p class="institution">{t.event}</p><p class="location">{t.location}</p></div></article>)}</section>
+</Layout>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "entomoscope",
+    "title": "Entomoscope & ENIMAS",
+    "tag": "Scientific imaging · AI integration",
+    "summary": "From specimens to usable images: I lead AI development and integrate analysis into the Entomoscope imaging workflow.",
+    "problem": "Digitizing small insects requires controlled imaging and a practical connection between hardware and analysis.",
+    "contribution": "I lead AI development for the Entomoscope photomicroscope and contribute to its integration with the DiversityScanner robotic ecosystem.",
+    "method": "ENIMAS connects image acquisition with analysis workflows for species identification, orientation, sex classification, and anatomical segmentation.",
+    "evidence": "The Entomoscope 2.0 / ENIMAS 2.0 preprint describes the platform. Related specimen-triage research evaluates downstream analysis tasks.",
+    "resources": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.64898/2026.01.23.701290"
+      },
+      {
+        "label": "Code",
+        "href": "https://gitlab.kit.edu/kit/iai/ber/enimas2"
+      },
+      {
+        "label": "Specimen-triage paper",
+        "href": "https://doi.org/10.1111/syen.70039"
+      }
+    ]
+  },
+  {
+    "id": "insectmorphoai",
+    "title": "InsectMorphoAI",
+    "tag": "Computer vision · Biological measurement",
+    "summary": "Measurements from images: I develop software to estimate insect length, volume, and biomass for ecological research.",
+    "problem": "Manual measurements limit the scale of insect trait and biomass studies.",
+    "contribution": "I develop the image-based software suite and deep learning workflows for insect morphometric analysis.",
+    "method": "Oriented bounding boxes support rapid measurement; anatomical segmentation supports more detailed, taxon-specific estimates from 2D images.",
+    "evidence": "Published in Ecological Informatics in 2026, with taxon-specific volumetric validation. Estimates depend on the imaging setup and the taxa evaluated.",
+    "resources": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.1016/j.ecoinf.2026.103854"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/hosseinshirali/InsectMorphoAI"
+      }
+    ]
+  },
+  {
+    "id": "forsaid",
+    "title": "FORSAID",
+    "tag": "Fine-grained recognition · Forest health",
+    "summary": "Vision for forest surveillance: I develop classifiers for regulated forest pests within the FORSAID project.",
+    "problem": "Recognizing regulated pests in trap images is difficult when species look similar and imaging conditions vary.",
+    "contribution": "I contribute deep learning classifiers to work package 3: digital technologies for ground detection and surveillance of regulated pests.",
+    "method": "Image-based species recognition connects computer vision with expert taxonomic knowledge in the Horizon Europe FORSAID project (grant 101134200).",
+    "evidence": "The Agrilus recognition study investigates neural networks for forest pest surveillance, including evaluation on specimen images.",
+    "resources": [
+      {
+        "label": "Agrilus paper",
+        "href": "https://doi.org/10.3897/neobiota.105.180959"
+      },
+      {
+        "label": "EU project record",
+        "href": "https://cordis.europa.eu/project/id/101134200"
+      }
+    ]
+  },
+  {
+    "id": "robotic-specimen-handling",
+    "title": "Robotic specimen handling",
+    "tag": "Robotics · Biodiversity workflows",
+    "summary": "Connecting specimen handling, imaging, and AI-assisted analysis.",
+    "problem": "Small, fragile biological specimens are difficult to handle and document consistently.",
+    "contribution": "I contribute AI analysis and collaborate with engineers and taxonomists to connect robotic imaging with specimen-level information.",
+    "method": "The broader research spans flexible gripping, close-range imaging, orientation and sex classification, and anatomical segmentation.",
+    "evidence": "Related publications cover flexible gripping, specimen triage, and acoustic levitation for multi-view imaging.",
+    "resources": [
+      {
+        "label": "Flexible-gripper paper",
+        "href": "https://doi.org/10.1515/auto-2023-0238"
+      },
+      {
+        "label": "Specimen-triage paper",
+        "href": "https://doi.org/10.1111/syen.70039"
+      },
+      {
+        "label": "Acoustic-levitation paper",
+        "href": "https://doi.org/10.1515/auto-2025-0139"
+      }
+    ]
+  },
+  {
+    "id": "turbine-maintenance",
+    "title": "Turbine maintenance optimization",
+    "tag": "Industry · Decision support",
+    "summary": "Optimization and data tools for industrial maintenance workflows.",
+    "problem": "Industrial maintenance planning requires usable decision support and consistent data workflows.",
+    "contribution": "As a Data Scientist Consultant at Modis / Baker Hughes, I developed a turbine-maintenance optimization algorithm, led cloud data migration, and built workflow automation tools.",
+    "method": "Optimization, data migration, and Microsoft Power Platform automation supported internal maintenance and information workflows.",
+    "evidence": "Professional work at Modis / Baker Hughes, February 2022–March 2023. No public implementation or quantified performance results are presented here.",
+    "resources": [
+      {
+        "label": "Experience",
+        "href": "/background/#experience"
+      }
+    ]
+  },
+  {
+    "id": "remote-sensing",
+    "title": "Carbon stock estimation from satellite imagery",
+    "tag": "Remote sensing · Environmental data",
+    "summary": "Semantic segmentation and satellite data analysis for environmental measurement.",
+    "problem": "Estimating carbon stocks from satellite imagery requires structured geospatial data and image interpretation.",
+    "contribution": "At Plasive Technologies, I designed and trained CNN segmentation models, developed a carbon stock estimation method, and constructed a multidimensional satellite-image dataset.",
+    "method": "Semantic segmentation of satellite imagery combined with remote sensing and data analytics.",
+    "evidence": "Professional work at Plasive Technologies in 2021. No public dataset, implementation, or validated performance figures are claimed here.",
+    "resources": [
+      {
+        "label": "Experience",
+        "href": "/background/#experience"
+      }
+    ]
+  }
+]

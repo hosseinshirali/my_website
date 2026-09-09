@@ -1,0 +1,24 @@
+---
+import Authors from './Authors.astro';
+const { paper: p } = Astro.props;
+const longAuthors = Boolean(p.shortAuthors);
+---
+<article id={p.id} class:list={['publication', { 'text-only': !p.image }]} data-publication={p.id}>
+  {p.image && <figure>
+    <a class="figure-link" href={p.image.src} aria-label={`View full image: ${p.title}`}>
+      <img src={p.image.src} alt={p.image.alt} width={p.image.width} height={p.image.height} loading="lazy" decoding="async" />
+    </a>
+    <figcaption><a href={p.image.source}>{p.image.caption}</a></figcaption>
+  </figure>}
+  <div class="publication-content">
+    <p class="venue"><span>{p.venue} · {p.year}</span><span class:list={['status', { preprint: p.status !== 'Published' }]}>{p.status}</span></p>
+    <h3><a href={'https://doi.org/' + p.doi}>{p.title}</a></h3>
+    <p class="contribution">{p.summary}</p>
+    {longAuthors ? <details class="authors"><summary><Authors authors={p.shortAuthors} /> · Full author list</summary><p><Authors authors={p.authors} /></p></details> : <p class="authors"><Authors authors={p.authors} /></p>}
+    {(p.details || p.note) && <p class="citation-details">{p.details}{p.note && <span> {p.note}</span>}</p>}
+    <ul class="resource-links" aria-label={`Resources for ${p.title}`}>
+      {p.links.map((link: { label: string; href: string }) => <li><a href={link.href}>{link.label}<span aria-hidden="true"> ↗</span></a></li>)}
+    </ul>
+    {p.earlierVersion && <p class="version-note"><a href={p.earlierVersion}>Earlier preprint ({p.earlierYear})</a></p>}
+  </div>
+</article>

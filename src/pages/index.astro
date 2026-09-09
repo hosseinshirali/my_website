@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProfileLinks from '../components/ProfileLinks.astro';
+import Publication from '../components/Publication.astro';
+import papers from '../data/publications.json';
+import projects from '../data/projects.json';
+const selected = ['insectmorphoai','entomoscope','specimen-triage','agrilus'].map(id => papers.find(p => p.id === id));
+---
+<Layout>
+  <section class="profile" aria-labelledby="profile-name">
+    <div class="profile-copy"><p class="eyebrow">Applied AI &amp; Computer Vision</p>
+      <h1 id="profile-name">Hossein Shirali</h1>
+      <p class="position">Doctoral Researcher · Karlsruhe Institute of Technology</p>
+      <p class="profile-statement">AI research into real systems.</p>
+      <p class="profile-intro">I connect computer vision, scientific imaging, and robotics to turn images into useful knowledge—with biodiversity as a central application.</p>
+      <ProfileLinks />
+    </div>
+    <img class="portrait" src="/images/hossein-shirali.webp" alt="Portrait of Hossein Shirali" width="240" height="290" fetchpriority="high" />
+  </section>
+  <section id="about" class="home-section about" aria-labelledby="about-title"><span id="intro" class="anchor-alias"></span>
+    <div class="section-label"><span class="section-number" aria-hidden="true">01 /</span><h2 id="about-title">About Me</h2></div>
+    <div class="prose"><p>I am a doctoral researcher at Karlsruhe Institute of Technology (KIT), supervised by apl. Prof. Dr. Christian Pylatiuk and apl. Prof. Dr. Markus Reischl. My research connects computer vision, scientific imaging, and robotics for biodiversity research. I develop methods for recognizing insects and measuring their traits, and integrate these methods into imaging and analysis systems.</p>
+    <p>My background spans electronics, data science, and applied machine learning, including work on industrial maintenance and satellite imagery. From May to August 2026, I completed a research stay in Prof. David Rolnick’s group at Mila. I enjoy working across disciplines to turn research questions into software and systems that people can use.</p></div>
+  </section>
+  <section id="research" class="home-section" aria-labelledby="research-title">
+    <div class="section-heading"><div><span class="section-number" aria-hidden="true">02 /</span><h2 id="research-title">Research Interests</h2></div></div>
+    <div class="research-grid">
+      <div><span class="theme-index" aria-hidden="true">01</span><h3>Fine-grained recognition</h3><p>Computer vision for distinguishing visually similar species and extracting specimen-level information.</p></div>
+      <div><span class="theme-index" aria-hidden="true">02</span><h3>Scientific imaging &amp; robotics</h3><p>Automated acquisition and integrated AI workflows that connect physical specimens with digital analysis.</p></div>
+      <div><span class="theme-index" aria-hidden="true">03</span><h3>Biological measurement</h3><p>Image-derived estimates of morphology, volume, and biomass for ecological research.</p></div>
+    </div>
+  </section>
+  <section id="publications" class="home-section" aria-labelledby="publications-title">
+    <div class="section-heading"><div><span class="section-number" aria-hidden="true">03 /</span><h2 id="publications-title">Selected Publications</h2></div><a class="section-link" href="/publications/">All publications <span aria-hidden="true">→</span></a></div>
+    <div class="publication-list">{selected.map(paper => <Publication paper={paper} />)}</div>
+  </section>
+  <section id="projects" class="home-section" aria-labelledby="projects-title">
+    <div class="section-heading"><div><span class="section-number" aria-hidden="true">04 /</span><h2 id="projects-title">Systems &amp; Projects</h2></div><a class="section-link" href="/projects/">Explore all projects <span aria-hidden="true">→</span></a></div>
+    <div class="project-grid">{projects.slice(0,3).map((p,i) => <article class="project-summary" data-project={p.id}><span class="theme-index" aria-hidden="true">0{i+1}</span><h3><a href={'/projects/#'+p.id}>{p.title}</a></h3><p>{p.summary}</p><a class="read-more" href={'/projects/#'+p.id}>Explore project <span aria-hidden="true">→</span></a></article>)}</div>
+  </section>
+  <section id="contact" class="contact home-section" aria-labelledby="contact-title"><div><span class="section-number" aria-hidden="true">05 /</span><h2 id="contact-title">Let’s connect.</h2><p>I welcome conversations about research collaboration and applied AI opportunities—especially where computer vision meets real-world systems.</p><a class="email-link" href="mailto:hossein.shirali@kit.edu">hossein.shirali@kit.edu <span aria-hidden="true">↗</span></a><ProfileLinks compact /></div></section>
+  <aside class="legacy-links" aria-label="More background"><span id="skills" class="anchor-alias"></span><span id="experience" class="anchor-alias"></span><span id="education" class="anchor-alias"></span><span id="conferences" class="anchor-alias"></span><p>Looking for more detail? <a href="/background/#experience">Experience</a> · <a href="/background/#education">Education</a> · <a href="/background/#skills">Skills</a> · <a href="/background/#conferences">Talks</a></p></aside>
+</Layout>
+<script>
+  const legacy: Record<string,string> = {skills:'/background/#skills',experience:'/background/#experience',education:'/background/#education',conferences:'/background/#conferences'};
+  const routeLegacy = () => { const target = legacy[window.location.hash.slice(1)]; if (target) window.location.replace(target); };
+  routeLegacy(); window.addEventListener('hashchange', routeLegacy);
+</script>

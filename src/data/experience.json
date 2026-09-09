@@ -1,0 +1,51 @@
+[
+  {
+    "institution": "Karlsruhe Institute of Technology (KIT)",
+    "role": "Doctoral Researcher",
+    "date": "Mar. 2023 – Present",
+    "location": "Karlsruhe, Germany",
+    "bullets": [
+      "Develop computer vision methods for automated insect digitization, recognition, and biological measurement.",
+      "Lead AI development for Entomoscope and contribute to InsectMorphoAI, DiversityScanner, and FORSAID."
+    ]
+  },
+  {
+    "institution": "Mila – Quebec Artificial Intelligence Institute",
+    "role": "Visiting Researcher",
+    "date": "May – Aug. 2026 · Completed",
+    "location": "Montréal, Canada",
+    "bullets": [
+      "Completed a research stay in Prof. David Rolnick’s group, working on AI, computer vision, and biodiversity monitoring."
+    ]
+  },
+  {
+    "institution": "Modis / Baker Hughes",
+    "location": "Italy, Remote",
+    "role": "Data Scientist Consultant",
+    "date": "Feb. 2022 - Mar. 2023",
+    "bullets": [
+      "Developed an optimization algorithm to improve turbine maintenance efficiency.",
+      "Led cloud data migration and implemented enhanced data security protocols.",
+      "Built automation tools using Microsoft Power Platform and delivered internal O365 training."
+    ]
+  },
+  {
+    "institution": "Plasive Technologies",
+    "location": "Bologna, Italy",
+    "role": "Junior Data Scientist",
+    "date": "2021",
+    "bullets": [
+      "Designed and trained CNN models for semantic segmentation of satellite imagery.",
+      "Developed a carbon stock estimation method using remote sensing and data analytics, and constructed a multidimensional dataset for satellite image research."
+    ]
+  },
+  {
+    "institution": "Kiwitron",
+    "location": "Bologna, Italy",
+    "role": "Machine Learning Intern",
+    "date": "Sep. 2020 - Jan. 2021",
+    "bullets": [
+      "Developed a semi-automatic image labeling method using point cloud data for my master’s thesis."
+    ]
+  }
+]

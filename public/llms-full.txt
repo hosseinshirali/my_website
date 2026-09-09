@@ -1,0 +1,9 @@
+# Hossein Shirali
+
+Doctoral researcher at KIT. Applied AI and computer vision, scientific imaging, robotics, and biodiversity research. Mila research stay completed May–August 2026.
+
+- [Profile](https://incandescent-scone-d4ee7d.netlify.app/)
+- [Publications](https://incandescent-scone-d4ee7d.netlify.app/publications/)
+- [Projects](https://incandescent-scone-d4ee7d.netlify.app/projects/)
+- [Background](https://incandescent-scone-d4ee7d.netlify.app/background/)
+- [CV](https://incandescent-scone-d4ee7d.netlify.app/assets/files/Hossein_Shirali_CV.pdf)
