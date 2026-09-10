@@ -138,3 +138,6 @@ body {
   .case-study { padding: 22px 18px; }
   .background-section { padding: 24px 18px; }
 }
+
+/* Give the current academic role the same ink colour as the name. */
+.profile .position { color: var(--ink); font-weight: 650; }

@@ -1,5 +1,45 @@
 [
   {
+    "id": "parasitoid-fly-biomass",
+    "title": "An AI-driven biomass estimation tool enabling population- and specimen-level variation analyses: A case study on parasitoid flies",
+    "authors": "Ascenzi, A., Shirali, H., Di Lorenzo, N., Nania, D., Wührl, L., Pylatiuk, C., Meier, R., & Cerretti, P.",
+    "year": 2026,
+    "venue": "Entomologia Experimentalis et Applicata",
+    "details": "Published online 8 September 2026.",
+    "status": "Published",
+    "summary": "Applies InsectMorphoAI to parasitoid flies to compare image-derived body size and biomass proxies across two surveys conducted 24 years apart.",
+    "doi": "10.1111/eea.70190",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.1111/eea.70190"
+      },
+      {
+        "label": "Project",
+        "href": "/projects/#insectmorphoai"
+      }
+    ]
+  },
+  {
+    "id": "microplastics",
+    "title": "Classification of microplastic particles in water using polarized light scattering and machine learning methods",
+    "authors": "Saur, L., von Pawlowski, M., Gengenbach, U., Sieber, I., Shirali, H., Wührl, L., Weng, X., Kiko, R., & Pylatiuk, C.",
+    "year": 2026,
+    "venue": "Journal of Hazardous Materials Advances",
+    "details": "23, 101343.",
+    "status": "Published",
+    "summary": "Investigates machine learning for classifying microplastic particles from polarized light scattering.",
+    "doi": "10.1016/j.hazadv.2026.101343",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.1016/j.hazadv.2026.101343"
+      }
+    ],
+    "earlierVersion": "https://doi.org/10.48550/arXiv.2511.06901",
+    "earlierYear": 2025
+  },
+  {
     "id": "acoustic-levitation",
     "title": "Automated photogrammetric close-range imaging of small invertebrates using acoustic levitation",
     "authors": "Klug, N., Kramer, M., Mazrek, F., Wührl, L., Shirali, H., Meier, R., & Pylatiuk, C.",
@@ -183,22 +223,5 @@
       "width": 479,
       "height": 850
     }
-  },
-  {
-    "id": "microplastics",
-    "title": "Classification of microplastic particles in water using polarized light scattering and machine learning methods",
-    "authors": "Saur, L., von Pawlowski, M., Gengenbach, U., Sieber, I., Shirali, H., Wührl, L., Weng, X., Kiko, R., & Pylatiuk, C.",
-    "year": 2025,
-    "venue": "arXiv",
-    "details": "arXiv:2511.06901. Version 2, revised March 2026.",
-    "status": "Preprint",
-    "summary": "Investigates machine learning for classifying microplastic particles from polarized light scattering.",
-    "doi": "10.48550/arXiv.2511.06901",
-    "links": [
-      {
-        "label": "Paper",
-        "href": "https://doi.org/10.48550/arXiv.2511.06901"
-      }
-    ]
   }
 ]
