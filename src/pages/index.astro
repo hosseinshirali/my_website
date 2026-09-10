@@ -38,8 +38,13 @@ const selected = ['insectmorphoai','entomoscope','specimen-triage','agrilus'].ma
     <div class="section-heading"><div><span class="section-number" aria-hidden="true">04 /</span><h2 id="projects-title">Systems &amp; Projects</h2></div><a class="section-link" href="/projects/">Explore all projects <span aria-hidden="true">→</span></a></div>
     <div class="project-grid">{projects.slice(0,3).map((p,i) => <article class="project-summary" data-project={p.id}><span class="theme-index" aria-hidden="true">0{i+1}</span><h3><a href={'/projects/#'+p.id}>{p.title}</a></h3><p>{p.summary}</p><a class="read-more" href={'/projects/#'+p.id}>Explore project <span aria-hidden="true">→</span></a></article>)}</div>
   </section>
+  <aside class="background-guide" aria-labelledby="background-guide-title">
+    <span id="skills" class="anchor-alias"></span><span id="experience" class="anchor-alias"></span><span id="education" class="anchor-alias"></span><span id="conferences" class="anchor-alias"></span>
+    <div><p class="eyebrow">Beyond the research</p><h2 id="background-guide-title">Looking for more detail?</h2><p>Explore the experience and skills behind my work.</p></div>
+    <nav aria-label="Explore my background"><a href="/background/#experience">Experience <span aria-hidden="true">↗</span></a><a href="/background/#education">Education <span aria-hidden="true">↗</span></a><a href="/background/#skills">Skills <span aria-hidden="true">↗</span></a><a href="/background/#conferences">Talks <span aria-hidden="true">↗</span></a></nav>
+  </aside>
   <section id="contact" class="contact home-section" aria-labelledby="contact-title"><div><span class="section-number" aria-hidden="true">05 /</span><h2 id="contact-title">Let’s connect.</h2><p>I welcome conversations about research collaboration and applied AI opportunities—especially where computer vision meets real-world systems.</p><a class="email-link" href="mailto:hossein.shirali@kit.edu">hossein.shirali@kit.edu <span aria-hidden="true">↗</span></a><ProfileLinks compact /></div></section>
-  <aside class="legacy-links" aria-label="More background"><span id="skills" class="anchor-alias"></span><span id="experience" class="anchor-alias"></span><span id="education" class="anchor-alias"></span><span id="conferences" class="anchor-alias"></span><p>Looking for more detail? <a href="/background/#experience">Experience</a> · <a href="/background/#education">Education</a> · <a href="/background/#skills">Skills</a> · <a href="/background/#conferences">Talks</a></p></aside>
+
 </Layout>
 <script>
   const legacy: Record<string,string> = {skills:'/background/#skills',experience:'/background/#experience',education:'/background/#education',conferences:'/background/#conferences'};
