@@ -14,7 +14,8 @@ const longAuthors = Boolean(p.shortAuthors);
     <p class="venue"><span>{p.venue} · {p.year}</span><span class:list={['status', { preprint: p.status !== 'Published' }]}>{p.status}</span></p>
     <h3><a href={'https://doi.org/' + p.doi}>{p.title}</a></h3>
     <p class="contribution">{p.summary}</p>
-    {longAuthors ? <details class="authors"><summary><Authors authors={p.shortAuthors} /> · Full author list</summary><p><Authors authors={p.authors} /></p></details> : <p class="authors"><Authors authors={p.authors} /></p>}
+    {longAuthors ? <details class="authors"><summary><Authors authors={p.shortAuthors} equalContributors={p.equalContributors} /> · Full author list</summary><p><Authors authors={p.authors} equalContributors={p.equalContributors} /></p></details> : <p class="authors"><Authors authors={p.authors} equalContributors={p.equalContributors} /></p>}
+    {p.equalContributors?.length > 0 && <p class="citation-details equal-contribution"><sup>*</sup> Equal contribution.</p>}
     {(p.details || p.note) && <p class="citation-details">{p.details}{p.note && <span> {p.note}</span>}</p>}
     <ul class="resource-links" aria-label="Publication resources">
       {p.links.map((link: { label: string; href: string }) => <li><a href={link.href}>{link.label}<span aria-hidden="true"> ↗</span></a></li>)}

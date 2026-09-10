@@ -3,5 +3,5 @@ import profile from '../data/profile.json';
 const { compact = false } = Astro.props;
 ---
 <ul class:list={['profile-links', { compact }]} aria-label="Professional links">
-  {profile.links.map(link => <li><a href={link.href}>{link.label}{link.label === 'CV' && <span class="link-note"> PDF</span>}</a></li>)}
+  {profile.links.map(link => <li><a href={link.href} target="_blank" rel="noopener noreferrer" title={link.href.startsWith('mailto:') ? 'Opens your email application' : 'Opens in a new tab'}>{link.label}{link.label === 'CV' && <span class="link-note"> PDF</span>}</a></li>)}
 </ul>

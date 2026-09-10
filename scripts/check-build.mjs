@@ -58,3 +58,20 @@ assert.equal(read('dist/google6a7ff7fa311fae9a.html'),read('google6a7ff7fa311fae
 assert.match(read('dist/robots.txt'),/sitemap.xml/);
 assert.equal(matches(read('dist/sitemap.xml'),/<loc>/g).length,4);
 console.log(`PASS: ${pages.length} static pages; ${internalLinks} internal links/assets; 9 publications, 6 projects; homepage 4/3; aliases, headings, alt text, metadata, verification and CV checksum.`);
+
+// Preserve the two confirmed equal-contribution pairs and separate-tab profile links.
+for (const [id, firstAuthor] of [['parasitoid-fly-biomass','Ascenzi, A.'],['agrilus','Caruso, V.']]) {
+  const article = html['publications/index.html'].split(`<article id="${id}"`)[1].split('</article>')[0];
+  assert(article.includes(`${firstAuthor}<sup>*</sup>`), `${id}: first equal contributor`);
+  assert(article.includes('<strong>Shirali, H.</strong><sup>*</sup>'), `${id}: Shirali equal contributor`);
+  assert(article.includes('Equal contribution.'), `${id}: contribution note`);
+}
+for (const [file,content] of Object.entries(html)) {
+  for(const [tag] of matches(content,/<a\b[^>]*>/g)) {
+    if (/href="(?:mailto:|[^" ]*Hossein_Shirali_CV\.pdf|https:\/\/(?:scholar\.google\.com|github\.com\/hosseinshirali"|linkedin\.com))/.test(tag)) {
+      assert(tag.includes('target="_blank"'), `${file}: profile destination must open separately`);
+      assert(tag.includes('rel="noopener noreferrer"'), `${file}: safe separate-tab link`);
+    }
+  }
+}
+console.log('PASS: equal-contribution markers and separate-tab profile links.');

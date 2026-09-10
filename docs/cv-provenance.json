@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/hosseinshirali/My_CV",
-  "commit": "216904b19ca1836c2a163835cf9bf38059eec4a4",
+  "commit": "3a2fbdf8bfea81b8e30809c0f7e6f5eea776cfe8",
   "source": "output/Hossein_Shirali_Academic_CV.pdf",
   "destination": "public/assets/files/Hossein_Shirali_CV.pdf",
-  "sha256": "de819b9ef3bc5a5e4b4d3d1e39443df1703eb6291af182a43665e131212fc965"
+  "sha256": "c81651d2c92856d293413700266991b771a375e20f28179d11b929ccc76d9916"
 }

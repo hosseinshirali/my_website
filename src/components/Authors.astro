@@ -1,5 +1,7 @@
 ---
-const { authors } = Astro.props;
-const parts = authors.split(/(Shirali, H\.)/g);
+const { authors, equalContributors = [] } = Astro.props;
+const markedNames = [...new Set(['Shirali, H.', ...equalContributors])];
+const escapedNames = markedNames.map(name => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+const parts = authors.split(new RegExp('(' + escapedNames.join('|') + ')', 'g'));
 ---
-<span>{parts.map((part: string) => part === 'Shirali, H.' ? <strong>{part}</strong> : part)}</span>
+<span>{parts.map((part: string) => <Fragment>{part === 'Shirali, H.' ? <strong>{part}</strong> : part}{equalContributors.includes(part) && <sup>*</sup>}</Fragment>)}</span>

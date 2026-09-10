@@ -22,9 +22,9 @@ const isCurrent = (item: {label: string; href: string}) => item.label === 'About
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header wrap"><a class="wordmark" href="/" aria-label="Hossein Shirali home">Hossein Shirali<span aria-hidden="true">.</span></a>
-      <nav aria-label="Main navigation"><ul>{nav.map(item => <li><a href={item.href} aria-current={isCurrent(item) ? 'page' : undefined}>{item.label}</a></li>)}</ul></nav>
+      <nav aria-label="Main navigation"><ul>{nav.map(item => <li><a href={item.href} target={item.label === 'CV' ? '_blank' : undefined} rel={item.label === 'CV' ? 'noopener noreferrer' : undefined} aria-current={isCurrent(item) ? 'page' : undefined}>{item.label}</a></li>)}</ul></nav>
     </header>
     <main id="main" class="wrap" tabindex="-1"><slot /></main>
-    <footer class="site-footer wrap"><p>Hossein Shirali <span aria-hidden="true">·</span> Karlsruhe, Germany</p><a href={'mailto:' + profile.email}>Get in touch <span aria-hidden="true">↗</span></a></footer>
+    <footer class="site-footer wrap"><p>Hossein Shirali <span aria-hidden="true">·</span> Karlsruhe, Germany</p><a href={'mailto:' + profile.email} target="_blank" rel="noopener noreferrer">Get in touch <span aria-hidden="true">↗</span></a></footer>
   </body>
 </html>

@@ -18,6 +18,10 @@
         "label": "Project",
         "href": "/projects/#insectmorphoai"
       }
+    ],
+    "equalContributors": [
+      "Ascenzi, A.",
+      "Shirali, H."
     ]
   },
   {
@@ -117,7 +121,6 @@
         "href": "/projects/#forsaid"
       }
     ],
-    "note": "Valerio Caruso and Hossein Shirali contributed equally.",
     "image": {
       "src": "/images/research/agrilus.webp",
       "alt": "Twelve labelled Agrilus beetle specimens with different body shapes and colours; specimens are not to scale.",
@@ -126,7 +129,11 @@
       "width": 846,
       "height": 850
     },
-    "shortAuthors": "Caruso, V., Shirali, H."
+    "shortAuthors": "Caruso, V., Shirali, H.",
+    "equalContributors": [
+      "Caruso, V.",
+      "Shirali, H."
+    ]
   },
   {
     "id": "specimen-triage",
