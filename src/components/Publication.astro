@@ -16,7 +16,7 @@ const longAuthors = Boolean(p.shortAuthors);
     <p class="contribution">{p.summary}</p>
     {longAuthors ? <details class="authors"><summary><Authors authors={p.shortAuthors} /> · Full author list</summary><p><Authors authors={p.authors} /></p></details> : <p class="authors"><Authors authors={p.authors} /></p>}
     {(p.details || p.note) && <p class="citation-details">{p.details}{p.note && <span> {p.note}</span>}</p>}
-    <ul class="resource-links" aria-label={`Resources for ${p.title}`}>
+    <ul class="resource-links" aria-label="Publication resources">
       {p.links.map((link: { label: string; href: string }) => <li><a href={link.href}>{link.label}<span aria-hidden="true"> ↗</span></a></li>)}
     </ul>
     {p.earlierVersion && <p class="version-note"><a href={p.earlierVersion}>Earlier preprint ({p.earlierYear})</a></p>}

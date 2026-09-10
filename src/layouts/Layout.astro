@@ -7,6 +7,7 @@ import profile from '../data/profile.json';
 const { title = 'Hossein Shirali — Applied AI & Computer Vision', description = 'Doctoral researcher at KIT connecting computer vision, scientific imaging, and robotics. AI research into real systems, with biodiversity as a central application.' } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const nav = [{label:'About',href:'/#about'},{label:'Publications',href:'/publications/'},{label:'Projects',href:'/projects/'},{label:'Background',href:'/background/'},{label:'CV',href:'/assets/files/Hossein_Shirali_CV.pdf'}];
+const isCurrent = (item: {label: string; href: string}) => item.label === 'About' ? Astro.url.pathname === '/' : Astro.url.pathname === item.href;
 ---
 <!doctype html>
 <html lang="en">
@@ -20,7 +21,7 @@ const nav = [{label:'About',href:'/#about'},{label:'Publications',href:'/publica
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header wrap"><a class="wordmark" href="/" aria-label="Hossein Shirali home">Hossein Shirali<span aria-hidden="true">.</span></a>
-      <nav aria-label="Main navigation"><ul>{nav.map(item => <li><a href={item.href} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>{item.label}</a></li>)}</ul></nav>
+      <nav aria-label="Main navigation"><ul>{nav.map(item => <li><a href={item.href} aria-current={isCurrent(item) ? 'page' : undefined}>{item.label}</a></li>)}</ul></nav>
     </header>
     <main id="main" class="wrap" tabindex="-1"><slot /></main>
     <footer class="site-footer wrap"><p>Hossein Shirali <span aria-hidden="true">·</span> Karlsruhe, Germany</p><a href={'mailto:' + profile.email}>Get in touch <span aria-hidden="true">↗</span></a></footer>
