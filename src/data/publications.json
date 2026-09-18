@@ -1,5 +1,52 @@
 [
   {
+    "id": "ground-beetle-identification",
+    "title": "Deep learning enables automated species identification of ground beetles (Carabidae) for biodiversity monitoring",
+    "authors": "Zahiri, R., Denner, A., Shirali, H., Beyer, N., Pylatiuk, C., Müller, P., von Reumont, B., Husemann, M.",
+    "year": 2026,
+    "venue": "Authorea",
+    "details": "",
+    "status": "Preprint · submitted",
+    "doi": "10.22541/authorea.15006674/v1",
+    "summary": "Evaluates deep-learning classifiers for ground beetle identification and examines how specimen segmentation reduces reliance on image backgrounds.",
+    "equalContributors": [
+      "Zahiri, R.",
+      "Denner, A."
+    ],
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.22541/authorea.15006674/v1"
+      }
+    ]
+  },
+  {
+    "id": "auto-bit",
+    "title": "Auto-BIT: Advancing beetle surveillance through automated imaging",
+    "authors": "Kramer, M., Dehon, F., Wührl, L., Klug, N., Shirali, H., Roques, A., Jactel, H., Rassati, D., Battisti, A., Pylatiuk, C.",
+    "year": 2026,
+    "venue": "Manuscript",
+    "details": "",
+    "status": "In preparation",
+    "summary": "Develops a modular imaging add-on for beetle traps that captures individual insects in free fall using laser triggering and a global-shutter camera.",
+    "links": []
+  },
+  {
+    "id": "neglected-diptera-biomass",
+    "title": "Neglect of small-bodied Diptera in sequencing and taxonomy hinders the identification of a substantial fraction of insect biomass",
+    "authors": "Ascenzi, A., Shirali, H., Feng, V., Srivathsan, A., Pylatiuk, C., Meier, R., Cerretti, P.",
+    "year": 2026,
+    "venue": "Manuscript",
+    "details": "",
+    "status": "Submitted",
+    "summary": "Combines DNA barcodes and image-derived body lengths to assess gaps in fly reference libraries, using cumulative body length as a biomass proxy.",
+    "equalContributors": [
+      "Ascenzi, A.",
+      "Shirali, H."
+    ],
+    "links": []
+  },
+  {
     "id": "parasitoid-fly-biomass",
     "title": "An AI-driven biomass estimation tool enabling population- and specimen-level variation analyses: A case study on parasitoid flies",
     "authors": "Ascenzi, A., Shirali, H., Di Lorenzo, N., Nania, D., Wührl, L., Pylatiuk, C., Meier, R., & Cerretti, P.",
@@ -22,6 +69,23 @@
     "equalContributors": [
       "Ascenzi, A.",
       "Shirali, H."
+    ]
+  },
+  {
+    "id": "multi-camera-digitization",
+    "title": "Automated Mechatronic Multi-Camera System for 360° Digitization of Small Specimens",
+    "authors": "Klug, N., Herrmann, F., Händle, F., Wührl, L., Shirali, H., Kramer, M., Saur, L., Meier, R., Pylatiuk, C.",
+    "year": 2026,
+    "venue": "2026 IEEE International Conference on Mechatronics and Automation (ICMA)",
+    "details": "pp. 617-622",
+    "status": "Published",
+    "doi": "10.1109/icma69663.2026.11647443",
+    "summary": "Automates multi-perspective imaging of small fluid-preserved specimens using three cameras, focus stacking, and controlled rotation.",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.1109/icma69663.2026.11647443"
+      }
     ]
   },
   {
@@ -165,6 +229,50 @@
     }
   },
   {
+    "id": "entomoscope",
+    "title": "Entomoscope 2.0 and ENIMAS 2.0: An open-source, AI-integrated platform for rapid and affordable insect digitization",
+    "authors": "Shirali, H., Boese, N. E., Kramer, M., Wang, J., Klug, N., Mikut, R., Meier, R., & Pylatiuk, C.",
+    "year": 2026,
+    "venue": "bioRxiv",
+    "details": "",
+    "status": "Preprint",
+    "summary": "Combines an affordable photomicroscope with open-source software for automated insect imaging and AI analysis.",
+    "doi": "10.64898/2026.01.23.701290",
+    "links": [
+      {
+        "label": "Paper",
+        "href": "https://doi.org/10.64898/2026.01.23.701290"
+      },
+      {
+        "label": "Code",
+        "href": "https://gitlab.kit.edu/kit/iai/ber/enimas2"
+      },
+      {
+        "label": "Project",
+        "href": "/projects/#entomoscope"
+      }
+    ],
+    "image": {
+      "src": "/images/research/entomoscope.webp",
+      "alt": "Entomoscope photomicroscope with camera, motorized vertical stage, and illuminated specimen platform.",
+      "caption": "Entomoscope 2.0 device photograph, Shirali et al.",
+      "source": "https://doi.org/10.64898/2026.01.23.701290",
+      "width": 479,
+      "height": 850
+    }
+  },
+  {
+    "id": "small-object-photogrammetry-review",
+    "title": "Close-range photogrammetry for 3D reconstruction of small objects: A systematic review",
+    "authors": "Klug, N., Petani, L., Wührl, L., Shirali, H., Meier, R., Pylatiuk, C.",
+    "year": 2025,
+    "venue": "Manuscript",
+    "details": "",
+    "status": "Submitted",
+    "summary": "Reviews image acquisition, reconstruction methods, and validation practices for photogrammetry of objects smaller than 10 cm.",
+    "links": []
+  },
+  {
     "id": "flexible-gripper",
     "title": "Automated handling of biological objects with a flexible gripper for biodiversity research",
     "authors": "Wührl, L., Keller, L., Klug, N., Shirali, H., Meier, R., & Pylatiuk, C.",
@@ -197,38 +305,5 @@
         "href": "https://doi.org/10.1071/IS24011"
       }
     ]
-  },
-  {
-    "id": "entomoscope",
-    "title": "Entomoscope 2.0 and ENIMAS 2.0: An open-source, AI-integrated platform for rapid and affordable insect digitization",
-    "authors": "Shirali, H., Boese, N. E., Kramer, M., Wang, J., Klug, N., Mikut, R., Meier, R., & Pylatiuk, C.",
-    "year": 2026,
-    "venue": "bioRxiv",
-    "details": "",
-    "status": "Preprint",
-    "summary": "Combines an affordable photomicroscope with open-source software for automated insect imaging and AI analysis.",
-    "doi": "10.64898/2026.01.23.701290",
-    "links": [
-      {
-        "label": "Paper",
-        "href": "https://doi.org/10.64898/2026.01.23.701290"
-      },
-      {
-        "label": "Code",
-        "href": "https://gitlab.kit.edu/kit/iai/ber/enimas2"
-      },
-      {
-        "label": "Project",
-        "href": "/projects/#entomoscope"
-      }
-    ],
-    "image": {
-      "src": "/images/research/entomoscope.webp",
-      "alt": "Entomoscope photomicroscope with camera, motorized vertical stage, and illuminated specimen platform.",
-      "caption": "Entomoscope 2.0 device photograph, Shirali et al.",
-      "source": "https://doi.org/10.64898/2026.01.23.701290",
-      "width": 479,
-      "height": 850
-    }
   }
 ]

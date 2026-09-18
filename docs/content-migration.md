@@ -52,3 +52,19 @@ The old URL /assets/files/Hossein_Shirali_CV.pdf is preserved. See cv-provenance
 InsectMorphoAI and acoustic levitation have now also been synchronized to the CV using the website's verified journal titles, authors, venues, years, volume/pages and DOI records. Both channels now contain eight published articles and one preprint; the corresponding earlier pending-status notes above are resolved. The three-page PDF was rebuilt and visually inspected, and its website copy matches the recorded CV commit and checksum.
 
 Hossein confirmed equal contribution for Ascenzi/Shirali (parasitoid-fly biomass) and Caruso/Shirali (Agrilus). Both names have superscript asterisks and an equal-contribution note in website citations, including the shortened and expanded Agrilus author lists. Profile links and all CV, Scholar, and email entry points open separately; email handling depends on the visitor's mail configuration. Internal page navigation remains in the same tab. LinkedIn is unchanged.
+
+## Publication update — 18 September 2026
+
+Five works added to CV and website, with submission/preparation statuses confirmed by Hossein:
+
+- `ground-beetle-identification`: Authorea DOI 10.22541/authorea.15006674/v1; Crossref and supplied preprint verify title/authors. Preprint and submitted. Equal contribution follows the manuscript.
+- `multi-camera-digitization`: IEEE Xplore 11647443 and Crossref DOI 10.1109/ICMA69663.2026.11647443 verify the conference citation, all nine authors, and pages 617–622. Published, ICMA 2026.
+- `small-object-photogrammetry-review`: supplied review PDF title/author line; Submitted. Retains 2025 manuscript year from its 14 October 2025 dateline.
+- `neglected-diptera-biomass`: supplied Word manuscript title/authors; Submitted. Ascenzi and Shirali contributed equally; body length is a biomass proxy, not direct biomass measurement.
+- `auto-bit`: supplied draft PDF title/authors; In preparation.
+
+Private manuscripts are represented by citations and brief summaries only; no full files or private resource links are distributed. No fabricated DOI, venue or paper link. The homepage still selects four papers.
+
+Deferred by user: “Using machine learning technology to identify and monitor Australia’s cryptic insect biodiversity.” The draft author line omits Hossein and is unfinished. Do not display on either channel until the user provides a confirmed publication citation.
+
+LinkedIn has not been edited.

@@ -2,6 +2,7 @@
 import Authors from './Authors.astro';
 const { paper: p } = Astro.props;
 const longAuthors = Boolean(p.shortAuthors);
+const paperUrl = p.doi ? 'https://doi.org/' + p.doi : undefined;
 ---
 <article id={p.id} class:list={['publication', { 'text-only': !p.image }]} data-publication={p.id}>
   {p.image && <figure>
@@ -12,14 +13,14 @@ const longAuthors = Boolean(p.shortAuthors);
   </figure>}
   <div class="publication-content">
     <p class="venue"><span>{p.venue} · {p.year}</span><span class:list={['status', { preprint: p.status !== 'Published' }]}>{p.status}</span></p>
-    <h3><a href={'https://doi.org/' + p.doi}>{p.title}</a></h3>
+    <h3>{paperUrl ? <a href={paperUrl}>{p.title}</a> : p.title}</h3>
     <p class="contribution">{p.summary}</p>
     {longAuthors ? <details class="authors"><summary><Authors authors={p.shortAuthors} equalContributors={p.equalContributors} /> · Full author list</summary><p><Authors authors={p.authors} equalContributors={p.equalContributors} /></p></details> : <p class="authors"><Authors authors={p.authors} equalContributors={p.equalContributors} /></p>}
     {p.equalContributors?.length > 0 && <p class="citation-details equal-contribution"><sup>*</sup> Equal contribution.</p>}
     {(p.details || p.note) && <p class="citation-details">{p.details}{p.note && <span> {p.note}</span>}</p>}
-    <ul class="resource-links" aria-label="Publication resources">
+    {p.links.length > 0 && <ul class="resource-links" aria-label="Publication resources">
       {p.links.map((link: { label: string; href: string }) => <li><a href={link.href}>{link.label}<span aria-hidden="true"> ↗</span></a></li>)}
-    </ul>
+    </ul>}
     {p.earlierVersion && <p class="version-note"><a href={p.earlierVersion}>Earlier preprint ({p.earlierYear})</a></p>}
   </div>
 </article>

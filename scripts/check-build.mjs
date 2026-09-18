@@ -11,15 +11,16 @@ const ids = s => matches(s,/\bid="([^"]+)"/g).map(m => m[1]);
 const publications = JSON.parse(read('src/data/publications.json'));
 const projects = JSON.parse(read('src/data/projects.json'));
 const provenance = JSON.parse(read('docs/cv-provenance.json'));
-assert.equal(publications.length,9);
+assert.equal(publications.length,14);
 assert.equal(projects.length,6);
 assert.equal(matches(html['index.html'],/data-publication=/g).length,4);
 assert.equal(matches(html['index.html'],/data-project=/g).length,3);
-assert.equal(matches(html['publications/index.html'],/data-publication=/g).length,9);
+assert.equal(matches(html['publications/index.html'],/data-publication=/g).length,14);
 assert.equal(matches(html['projects/index.html'],/data-project=/g).length,6);
 for (const pub of publications) {
   assert(ids(html['publications/index.html']).includes(pub.id), `Missing publication ${pub.id}`);
-  assert(pub.links.some(l=>l.label==='Paper'));
+  if (pub.doi) assert(pub.links.some(l=>l.label==='Paper' && l.href === 'https://doi.org/'+pub.doi));
+  else assert(['Submitted','In preparation'].includes(pub.status) && pub.links.length === 0);
   assert(!pub.authors.includes('et al.'),`Incomplete authors: ${pub.id}`);
 }
 for (const project of projects) assert(ids(html['projects/index.html']).includes(project.id));
@@ -57,10 +58,10 @@ assert.equal(cv.subarray(0,4).toString(),'%PDF');
 assert.equal(read('dist/google6a7ff7fa311fae9a.html'),read('google6a7ff7fa311fae9a.html'));
 assert.match(read('dist/robots.txt'),/sitemap.xml/);
 assert.equal(matches(read('dist/sitemap.xml'),/<loc>/g).length,4);
-console.log(`PASS: ${pages.length} static pages; ${internalLinks} internal links/assets; 9 publications, 6 projects; homepage 4/3; aliases, headings, alt text, metadata, verification and CV checksum.`);
+console.log(`PASS: ${pages.length} static pages; ${internalLinks} internal links/assets; 14 publications, 6 projects; homepage 4/3; aliases, headings, alt text, metadata, verification and CV checksum.`);
 
 // Preserve the two confirmed equal-contribution pairs and separate-tab profile links.
-for (const [id, firstAuthor] of [['parasitoid-fly-biomass','Ascenzi, A.'],['agrilus','Caruso, V.']]) {
+for (const [id, firstAuthor] of [['parasitoid-fly-biomass','Ascenzi, A.'],['agrilus','Caruso, V.'],['neglected-diptera-biomass','Ascenzi, A.']]) {
   const article = html['publications/index.html'].split(`<article id="${id}"`)[1].split('</article>')[0];
   assert(article.includes(`${firstAuthor}<sup>*</sup>`), `${id}: first equal contributor`);
   assert(article.includes('<strong>Shirali, H.</strong><sup>*</sup>'), `${id}: Shirali equal contributor`);
@@ -75,3 +76,8 @@ for (const [file,content] of Object.entries(html)) {
   }
 }
 console.log('PASS: equal-contribution markers and separate-tab profile links.');
+
+assert.equal(publications.filter(p=>p.status==='Published').length,9);
+assert.equal(publications.filter(p=>p.status==='In preparation').length,1);
+assert(!html['publications/index.html'].includes('doi.org/undefined'));
+assert(!publications.some(p=>p.id==='australian-insect-biodiversity'));
