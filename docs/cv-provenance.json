@@ -1,7 +1,9 @@
 {
   "repository": "https://github.com/hosseinshirali/My_CV",
-  "commit": "c28d9cc5b08e7baeb6f104bdd28b7d263d3cff0a",
+  "commit": null,
+  "base_commit": "c28d9cc5b08e7baeb6f104bdd28b7d263d3cff0a",
+  "source_state": "Local uncommitted CV update on 2026-09-18: Mila visit, confirmed Plasive dates, expected PhD completion early 2027.",
   "source": "output/Hossein_Shirali_Academic_CV.pdf",
   "destination": "public/assets/files/Hossein_Shirali_CV.pdf",
-  "sha256": "d668af31626c339e1602827a66da43b942f0bab5ded3f22c43a5cfe2c0ab7388"
+  "sha256": "e163b2f4099dcafd45e9ae895921ba7ec69f8be5a63130b0d4715aa7a7c819be"
 }
